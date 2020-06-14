@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/parts/header.css">
 
   {% block styles %}
   {% endblock styles %}
@@ -19,6 +20,8 @@
 </head>
 <body>
   {% include "parts/messages.njk" %}
+
+  {% include "parts/header.njk" %}
 
   <div id="{{ pageId }}">
     {% block content %}
